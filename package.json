@@ -24,7 +24,7 @@
     "predeploy": "cd example && yarn && yarn build",
     "deploy": "gh-pages -d example/build",
     "commit": "git cz",
-    "release": "semantic-release"
+    "release": "semantic-release -b main"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
