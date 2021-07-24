@@ -18,7 +18,7 @@
   "scripts": {
     "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "clean": "rm -rf dist",
-    "prepare": "rollup -c --exports auto && cd example && yarn",
+    "prestart": "rollup -c --exports auto && cd example && yarn",
     "start": "concurrently \"rollup -cw --exports auto\" \"cd example && yarn start\"",
     "build": "yarn clean && rollup -c --exports auto",
     "predeploy": "cd example && yarn && yarn build",
